@@ -9,5 +9,5 @@ jobs:
       - uses: actions/setup-node@v4
         with: 
           node_version: '20'
-      - run: npm install -g bats
-      - run: bats -v
+      - run: npm install bats
+      - run: ./node_modules/bats/bin/bats -v
